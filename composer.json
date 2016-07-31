@@ -1,4 +1,12 @@
 {
+  "name": "maigoxin/easylib_app",
+  "description": "just easylib app",
+  "type": "project",
+  "homepage": "https://github.com/maigoxin/easylib_app",
+  "license": "MIT",
+  "keywords": [
+    "maigoxin",
+  ],
   "require": {
     "php": ">=5.5",
     "slim/slim": "^3.0",
