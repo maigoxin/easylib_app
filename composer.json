@@ -1,0 +1,13 @@
+{
+  "require": {
+    "php": ">=5.5",
+    "slim/slim": "^3.0",
+    "maigoxin/easylib": "v0.02",
+    "maigoxin/notorm": "v0.02"
+  },  
+  "autoload": {
+    "psr-4": {
+      "App\\": "src/app/"
+    }   
+  }
+}
