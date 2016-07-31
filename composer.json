@@ -5,7 +5,7 @@
   "homepage": "https://github.com/maigoxin/easylib_app",
   "license": "MIT",
   "keywords": [
-    "maigoxin",
+    "maigoxin"
   ],
   "require": {
     "php": ">=5.5",
