@@ -12,8 +12,8 @@ if (!defined('WEB_ROOT')) {
     define('WEB_ROOT', __DIR__);
 }
 
-if (ini_get('ENV') != false) {
-    define('ENV', ini_get('ENV'));
+if (get_cfg_var('ENV') != false) {
+    define('ENV', get_cfg_var('ENV'));
 }
 
 if (!defined('ENV')) {
