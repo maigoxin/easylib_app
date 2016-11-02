@@ -10,7 +10,7 @@
   "require": {
     "php": ">=5.5",
     "slim/slim": "^3.0",
-    "maigoxin/easylib": "v0.02",
+    "maigoxin/easylib": "^0.05",
     "maigoxin/notorm": "v0.02"
   },  
   "autoload": {
