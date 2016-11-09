@@ -1,0 +1,16 @@
+<phpunit 
+        bootstrap = 'tests/loader.php'
+        verbose = 'true'
+>
+
+    <testsuites>
+        <testsuite name="all">
+            <directory>tests</directory>
+        </testsuite>
+        <testsuite name="service">
+            <directory>tests</directory>
+            <file>tests/xxxxTest.php</file>
+        </testsuite>
+    </testsuites>
+
+</phpunit>
