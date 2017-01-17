@@ -10,4 +10,4 @@ use EasyLib\Middleware\RequestLog;
 use Psr7Middlewares\Middleware\TrailingSlash;
 
 $app->add(new TrailingSlash(false))->add(RequestLog::class);
-$app->get('/test', TestController::class . ':test');
+$app->get('/test[/{service:.+}]', TestController::class . ':test');

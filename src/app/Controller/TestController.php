@@ -12,7 +12,8 @@ class TestController extends \EasyLib\BaseController
     public function test(Request $request, Response $response, $args)
     {
         $data = [
-            'Hello' => 'World'
+            'Hello' => 'World',
+            'World' => $args['service']
         ];
         return $this->view->render($data, 200);
     }
