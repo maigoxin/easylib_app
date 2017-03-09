@@ -1,11 +1,4 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: frost
- * Date: 5/16/16
- * Time: 5:40 AM
- */
-
 namespace App\Config;
 
 
@@ -19,30 +12,19 @@ class Database
 {
     private static $_config = [
         'development' => [
-            'pocadmin' => [
-                'dsn' => 'mysql:host=127.0.0.1;dbname=xx',
-                'user' => '',
-                'pass' => '',
-            ]
         ],
         'pbs' => [
-            'pocadmin' => [
-                'dsn' => 'mysql:host=127.0.0.1;dbname=xx',
-                'user' => '',
-                'pass' => '',
-            ]
         ],
         'ONLINE' => [
-            'pocadmin' => [
-                'dsn' => 'mysql:host=127.0.0.1;dbname=xx',
-                'user' => '',
-                'pass' => '',
-            ]
         ],
     ];
     
-    public static function get($env)
+    public static function get($env = false)
     {
-        return  self::$_config[$env];
+        if ($env == false) {
+            return  self::$_config[ENV];
+        }else {
+            return  self::$_config[$env];
+        }
     }
 }
