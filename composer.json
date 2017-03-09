@@ -11,7 +11,7 @@
     "php": ">=5.5",
     "slim/slim": "^3.0",
     "gregwar/captcha": "1.*",
-    "maigoxin/easylib": "^0.15",
+    "maigoxin/easylib": "^0.17",
     "maigoxin/notorm": "v0.02"
   },  
   "autoload": {
