@@ -20,6 +20,10 @@ if (!defined('ENV')) {
     define('ENV', 'development');
 }
 
+if (isset($_SERVER['HTTP_X_REQUESTED_WITH'])) {
+    define('REQUEST_ID', $_SERVER['HTTP_X_REQUESTED_WITH']);
+}
+//kop传递的id
 if (isset($_SERVER['HTTP_X_REQUEST_ID'])) {
     define('REQUEST_ID', $_SERVER['HTTP_X_REQUEST_ID']);
 }
